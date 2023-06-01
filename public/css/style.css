@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+}
+
+.wrapper .sidebar {
+    background: #283342;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .title_sidebar {
+    background-color: #1D242E;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin: -20px 0px 5px 0px;
+
+}
+
+.wrapper .sidebar .profile {
+    background-color: #313945;
+    height: 10%;
+    margin-top: -5px;
+    padding: 5px 0 5px 0;
+}
+
+.wrapper .sidebar .profile .profilbox {
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.wrapper .sidebar .profile img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.wrapper .sidebar .profile span {
+    margin-left: 20px;
+
+}
+
+.wrapper .sidebar .profile .jabatan {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.wrapper .sidebar .profile .nama {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FED600;
+    margin-top: 25px;
+}
+
+.wrapper .sidebar ul .isidropdown a span{
+    /* background-color: #1D242E; */
+    margin-left: 20px;
+}
+
+.wrapper .sidebar ul {
+    padding-left: 0;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .icons {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+
+
+/* .wrapper .sidebar ul li:hover,
+.wrapper .sidebar ul li.active {
+    color: #0c7db1;
+
+    background: white;
+    border-right: 2px solid rgb(5, 68, 104);
+} */
+
+.wrapper .sidebar ul li a:hover .icons,
+.wrapper .sidebar ul li a.active .icons {
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+    display: block;
+}
+
+.wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+    background: rgb(105, 188, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover {
+    color: #a2ecff;
+}
+
+.wrapper .section .container {
+    margin: 30px;
+    background: #fff;
+    padding: 50px;
+    line-height: 28px;
+}
+
+/* .wrapper .section .container .title-section{
+    background-color: #0c7db1;
+    margin-bottom: 5px;
+    display: inline-flex;
+} */
+
+.wrapper .section .container .title-section .tambah-barang{
+    background-color: #03A9F5;
+    margin-left: 50rem;
+    padding: 0 5px;
+    border-radius: 10px;
+    position: absolute;
+    border-color: #0a2ca5;
+}
+
+body.active .wrapper .sidebar {
+    /* left: -225px; */
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
